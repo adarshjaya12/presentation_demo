@@ -1,11 +1,16 @@
 import {render} from 'react-dom';
 import * as React from 'react';
 
-const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
+class App extends React.Components<any,any>{
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return(
+      <div>Hello</div>
+    )
+}
+
 }
 render(<App/>, document.getElementById('root'));
